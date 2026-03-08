@@ -1,0 +1,90 @@
+/* === 1. ОСНОВНОЙ КОНТЕЙНЕР СЕКЦИИ === */
+.donates {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    min-height: 525px;
+    margin-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/foto/pieta.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+.donation-wrapper {
+    margin:auto 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.donation-title {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* === 2. ШКАЛА И ЦЕЛЬ === */
+.donates-scale {
+    width: 900px; 
+    text-align: center;
+}
+
+.donates-scale__goal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; 
+    font-size: 22px;
+    font-weight: lighter;
+    gap: 8px;
+}
+
+.donates-scale__goal__text {
+    color: white;
+    margin: 0;
+}
+
+.donates-scale__goal__sum {
+    color: #EF6C00;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* === 3. САМ PROGRESS BAR === */
+.donation-bar-container {
+    height: 35px; 
+    width: 100%;
+    background-color: rgba(236, 239, 241, 0.15); 
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.donation-progress-fill {
+    height: 100%;
+    background-color: #EF6C00;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.donation-text-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9); 
+    z-index: 2;
+    pointer-events: none;
+}

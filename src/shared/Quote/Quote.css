@@ -1,0 +1,31 @@
+.quote { 
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+}
+.quote--no_margin_button {
+    margin: 0 auto;
+}
+
+.autor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.autor__name {
+    color: #ef6c00;
+    font-weight: bold;
+    font-style: italic;
+}
+.autor__san {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+

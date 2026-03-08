@@ -1,0 +1,87 @@
+.section-npt{
+    padding-top: 0;
+}
+.home {
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../public/foto/Notre-Dame.png') no-repeat center;
+    background-size: cover;
+}
+
+.home__preview {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:37vh;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.home__preview-title h1 {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: "Arsenal", sans-serif;
+    font-size: 79px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.home__preview-subtitle h3 {
+    margin-bottom: 20px;
+    opacity: 0.9;
+    font-family: "Arsenal", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buttonh {
+    display: inline-block;
+    margin: 0;
+    padding: 9px 15px 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    border: 2px solid #EF6C00;
+    border-radius: 3px;
+    font-family: "Arsenal", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    user-select: none;
+    outline: none;
+}
+
+
+    .buttonh:hover {
+        background-color: #EF6C00;
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Эффект нажатия (Active) — Надавливание */
+    .buttonh:active {
+        /* Возвращаем масштаб чуть меньше исходного, чтобы создать эффект сжатия */
+        transform: scale(0.98);
+        /* Затемняем фон (эффект нажатия) */
+        filter: brightness(0.9);
+        /* Слегка убираем тень при клике */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Быстрая реакция на клик */
+        transition: transform 0.05s ease;
+    }
+
+.button--lg {
+    padding: 9px 25px 11px;
+    font-size: 25px;
+    font-weight: normal;
+}

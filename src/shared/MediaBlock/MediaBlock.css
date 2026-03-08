@@ -1,0 +1,42 @@
+.media-block {
+    padding: 0 30px 30px ;
+    color: white;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.media-block-container {
+    display: flex;
+    height: 570px;
+    overflow-y: auto;
+}
+
+.media-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+    .media-tabs button {
+        background: none;
+        border: 1px solid #ef6c00;
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+     
+    }
+
+        .media-tabs button.active {
+            background: #ef6c00;
+            color: black;
+        }
+
+
+
+
+
+
+

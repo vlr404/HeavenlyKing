@@ -1,0 +1,92 @@
+
+.map-wrapper {
+    border: 7px solid white;
+}
+
+.orange-tooltip {
+    pointer-events: auto !important;
+    cursor: default !important;
+    user-select: text !important;
+    background-color: #f18c4d !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px !important;
+    border-radius: 2px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+    font-size: 14px;
+}
+
+    .orange-tooltip::before {
+        border-bottom-color: #f18c4d !important;
+    }
+
+.tooltip-inner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.route-link {
+    
+}
+.white-icon {
+   
+    margin-right: 5px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+    .route-link hide-link,
+    .route-link a {
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+        .route-link a:hover {
+            text-decoration: underline !important;
+        }
+
+.map-label-text {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #575757 !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    pointer-events: none !important;
+    text-shadow: 1px 1px 0px white, -1px -1px 0px white;
+    text-transform: uppercase !important;
+}
+
+    .map-label-text::before {
+        display: none !important;
+    }
+
+
+/* Внешний круг */
+.outer-circle {
+    width: 11px;
+    height: 11px;
+    right: .5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #575757;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Внутренний круг */
+.inner-circle {
+    width: 4px;
+    height: 4px;
+    
+    background-color: #575757;
+    border-radius: 50%;
+}
+

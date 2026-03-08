@@ -1,0 +1,147 @@
+.father-slider-layout {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.father-slider-viewport {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1090px;
+}
+
+.father-slider-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+    padding: 10px 0;
+}
+
+.father-slider-track-cent {
+    justify-content: center;
+}
+
+.father-card {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.father-grid__image {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+    .father-grid__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .father-grid__image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 5;
+    }
+
+    .father-grid__image .SocialMedia {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+    }
+
+.father-card:hover .father-grid__image::after {
+    opacity: 1;
+}
+
+.father-card:hover .father-grid__image .SocialMedia {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+.father-card:hover .father-grid__image img {
+    transform: scale(1.05);
+}
+
+.father-grid__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #ef6c00;
+    font-family: "Droid Serif", serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+    .father-grid__name::before,
+    .father-grid__name::after {
+        width: 15px;
+        height: 1px;
+        margin: 0 10px;
+        content: "";
+        background-color: #ef6c00;
+    }
+
+.father-grid__san {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Droid Serif", serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 170px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #ef6c00;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+    padding: 0 20px;
+}
+
+    .slider-arrow.left {
+        left: -20px;
+    }
+
+    .slider-arrow.right {
+        right: -20px;
+    }
+
+    .slider-arrow:hover {
+        color: #fff;
+    }
+
+    .slider-arrow.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }

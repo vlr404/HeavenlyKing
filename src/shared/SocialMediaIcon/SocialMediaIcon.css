@@ -1,0 +1,33 @@
+.SocialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 5px;
+    width: 100%; 
+    max-width: 220px; 
+    z-index: 10
+}
+.SocialMedia--five {
+    max-width: 150px;
+}
+
+.SocialMedia__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #EF6C00;
+    border-radius: 3px;
+    color: #EF6C00; 
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+    .SocialMedia__icon:hover {
+        background-color: #EF6C00;
+        color: #ffffff; 
+        transform: translateY(-3px);
+    }
+
+   

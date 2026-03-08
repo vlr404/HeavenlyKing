@@ -1,0 +1,42 @@
+
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 9px 15px 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ef6c00;
+    border: 2px solid #EF6C00;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    user-select: none;
+    outline: none;
+}
+
+    /* Эффект наведения (Hover) — Увеличение */
+    .button:hover {
+        /* Увеличиваем кнопку на 5% */
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Эффект нажатия (Active) — Надавливание */
+    .button:active {
+        /* Возвращаем масштаб чуть меньше исходного, чтобы создать эффект сжатия */
+        transform: scale(0.98);
+        /* Затемняем фон (эффект нажатия) */
+        filter: brightness(0.9);
+        /* Слегка убираем тень при клике */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Быстрая реакция на клик */
+        transition: transform 0.05s ease;
+    }
+.button--lg {
+    padding: 9px 25px 11px;
+    font-size: 25px;
+
+}

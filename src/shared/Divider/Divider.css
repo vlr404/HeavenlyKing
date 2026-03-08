@@ -1,0 +1,46 @@
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 30px;
+    gap: 6px;
+}
+
+.divider__line {
+    position: relative;
+    flex-grow: 1;
+    height: 2px;
+    background: #EF6C00;
+}
+
+    .divider__line::after {
+        position: absolute;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        content: "";
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-color: #EF6C00;
+    }
+
+    .divider__line:first-child::after {
+        right: 0;
+    }
+
+    .divider__line:last-child::after {
+        left: 0;
+    }
+
+.divider__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 146px;
+    height: 32px;
+    color: #EF6C00;
+    border: 2px solid #EF6C00;
+    border-radius: 3px;
+    font-size: 24px;
+}

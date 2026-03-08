@@ -1,0 +1,392 @@
+.spotify-container {
+    color: #fff;
+    height: 100%; /* Общая высота блока */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width:100%;
+}
+
+/* ПЛЕЙЛИСТ */
+.spotify-playlist {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.playlist-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 60px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+    color: #b3b3b3;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.track-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 60px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .track-row:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .track-row.active {
+        background-color: rgba(255, 140, 0, 0.1);
+    }
+
+.track-index {
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.track-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+    .track-main img {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+    }
+
+.track-names {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.t-author {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.orange-text {
+    color: #FF8C00;
+}
+
+.playing-icon-list {
+    position: absolute;
+    left: 10px;
+    color: #FF8C00;
+    font-size: 18px;
+}
+
+.track-duration {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-align: right;
+    padding-right:10px;
+}
+
+/* ПЛЕЕР (НИЖНИЙ БАР) */
+.spotify-player {
+    background-color: #25252544;
+    height: 90px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #282828;
+    border-radius:5px;
+}
+
+.player-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+    .player-left img {
+        width: 56px;
+        height: 56px;
+        border-radius: 4px;
+    }
+
+.p-title {
+    font-size: 14px;
+}
+
+.p-author {
+    font-size: 11px;
+    color: #b3b3b3;
+}
+
+.player-center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.btn-svg {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+    .btn-svg.white {
+        color: #b3b3b3;
+    }
+
+    .btn-svg.orange {
+        color: #FF8C00;
+    }
+
+    .btn-svg:hover {
+        color: #fff;
+    }
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+    .nav-btn:hover {
+        color: #fff;
+    }
+
+.play-circle {
+    background: #fff;
+    color: #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.progress-bar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-text {
+    font-size: 11px;
+    color: #a7a7a7;
+    min-width: 30px;
+}
+
+.progress-bg {
+    flex: 1;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #b3b3b3;
+    border-radius: 2px;
+}
+
+.progress-bg:hover .progress-fill {
+    background-color: #FF8C00;
+}
+
+.player-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-bar {
+    width: 100px;
+    height: 4px;
+    background: #4d4d4d;
+    border-radius: 2px;
+}
+
+.spotify-playlist::-webkit-scrollbar {
+    width: 6px;
+}
+
+.spotify-playlist::-webkit-scrollbar-track {
+    background: none;
+
+}
+
+.spotify-playlist::-webkit-scrollbar-thumb {
+    background: #ef6c00; /* Твой основной оранжевый цвет */
+    border-radius: 10px;
+}
+
+    .spotify-playlist::-webkit-scrollbar-thumb:hover {
+        background: #ff8c00;
+    }
+
+.progress-bg {
+    flex: 1;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #fff; /* Белая полоса по умолчанию */
+    border-radius: 2px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+/* Оранжевый при наведении на всю полосу */
+.progress-bg:hover .progress-fill {
+    background-color: #FF8C00;
+}
+
+/* Ползунок (кружок), который появляется при наведении */
+.progress-knob {
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none; /* Скрыт по умолчанию */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.progress-bg:hover .progress-knob {
+    display: block;
+}
+
+/* Текст времени */
+.time-text {
+    font-size: 11px;
+    color: #a7a7a7;
+    min-width: 35px;
+    text-align: center;
+}
+
+
+/* Блок с номером/анимацией */
+.track-index-box {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* АНИМАЦИЯ ЭКВАЛАЙЗЕРА */
+.playing-animation {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+    .playing-animation .bar {
+        width: 2px;
+        background-color: #FF8C00; /* Цвет Spotify */
+        animation: bounce 1s ease-in-out infinite;
+    }
+
+        .playing-animation .bar:nth-child(1) {
+            height: 100%;
+            animation-delay: 0.1s;
+        }
+
+        .playing-animation .bar:nth-child(2) {
+            height: 60%;
+            animation-delay: 0.3s;
+        }
+
+        .playing-animation .bar:nth-child(3) {
+            height: 85%;
+            animation-delay: 0.2s;
+        }
+
+        .playing-animation .bar:nth-child(4) {
+            height: 40%;
+            animation-delay: 0.4s;
+        }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scaleY(0.4);
+    }
+
+    50% {
+        transform: scaleY(1.2);
+    }
+}
+
+/* ГРОМКОСТЬ */
+.player-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-bg {
+    width: 100px;
+    height: 4px;
+    background-color: #4d4d4d;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.volume-fill {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.volume-bg:hover .volume-fill {
+    background-color: #FF8C00;
+}
+
+.volume-bg:hover .progress-knob {
+    display: block; /* Показываем кружок при наведении */
+}
+
+.orange-text {
+    color: #FF8C00 !important;
+}
