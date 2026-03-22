@@ -1,8 +1,8 @@
 import './Father.css';
-import { Divider } from '../../shared/Divider/Divider.jsx';
-import { FatherGrid } from '../../entity/FatherGrid/FatherGrid.jsx';
-import { DonationBar } from "../../shared/DonationBar/DonationBar.jsx";
-import { Quote } from '../../shared/Quote/Quote.jsx';
+import { Divider } from '../../../components/Home/Divider/Divider.js';
+import { FatherGrid } from '../../../entity/FatherGrid/FatherGrid.js';
+import { DonationBar } from "../../../components/Home/DonationBar/DonationBar.js";
+import { Quote } from '../../../components/Home/Quote/Quote.js';
 
 export const Father = () => {
     return (

@@ -1,29 +1,14 @@
-import './App.css'
-
-import { Header } from './widgets/Header/Header.jsx';
-import { Home } from './widgets/Home/Home.jsx';
-import { About } from './widgets/About/About.jsx';
-import { Events } from './widgets/Events/Events.jsx';
-import { Father } from './widgets/Father/Father.jsx';
-import { Ceremony } from './widgets/Ceremony/Ceremony.jsx';
-import { Contacts } from './widgets/Contacts/Contacts.jsx';
-
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.tsx'
+// import Shop from './pages/Shop'
 
 function App() {
-    return (
-
-        <div className="App">
-            <Header />
-            <Home />
-            <About />
-            <Father />
-            <Events />
-            <Ceremony />
-            <Contacts />
-           
-        </div>
-
-
-    )
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/shop" element={<Shop />} /> */}
+    </Routes>
+  )
 }
+
 export default App

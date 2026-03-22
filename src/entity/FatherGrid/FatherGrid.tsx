@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './FatherGrid.css';
-import { SocialMediaIcon } from '../../shared/SocialMediaIcon/SocialMediaIcon';
-import type { SocialPlatform } from '../../shared/SocialMediaIcon/SocialMediaIcon';
+import { SocialMediaIcon } from '../../components/common/SocialMediaIcon/SocialMediaIcon';
+import type { SocialPlatform } from '../../components/common/SocialMediaIcon/SocialMediaIcon';
 
 type Father = {
     id: number;

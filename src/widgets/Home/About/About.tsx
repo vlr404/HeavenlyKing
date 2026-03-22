@@ -1,9 +1,9 @@
 ﻿    import './About.css';
-    import { Quote } from '../../shared/Quote/Quote.jsx';
-    import { Divider } from '../../shared/Divider/Divider.jsx';
-    import { Benefits } from '../../shared/Benefits/Benefits.jsx';
-    import { QuoteBlock } from '../../shared/QuoteBlock/QuoteBlock.jsx';
-    import { Space } from '../../shared/Space/Space.jsx'; 
+    import { Quote } from '../../../components/Home/Quote/Quote.js';
+    import { Divider } from '../../../components/Home/Divider/Divider.js';
+    import { Benefits } from '../../../components/Home/Benefits/Benefits.js';
+    import { QuoteBlock } from '../../../components/Home/QuoteBlock/QuoteBlock.js';
+    import { Space } from '../../../components/common/Space/Space.js'; 
 
     export const About = () => {
         return (

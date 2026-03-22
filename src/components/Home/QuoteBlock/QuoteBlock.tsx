@@ -1,7 +1,7 @@
 import './QuoteBlock.css';
 import { Button } from '../Button/Button';
 import { Quote } from '../Quote/Quote';
-import { SocialMediaIcon } from '../SocialMediaIcon/SocialMediaIcon';
+import { SocialMediaIcon } from '../../common/SocialMediaIcon/SocialMediaIcon';
 
 type SocialMediaLinks = {
     [platform: string]: string;

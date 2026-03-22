@@ -11,7 +11,7 @@ export const Header = () => {
 
                 <nav className="header__nav">
                     <ul>
-                        <li><a href="#Home">ГЛАВНАЯ</a></li>
+                        <li><a href="#Hero">ГЛАВНАЯ</a></li>
                         <li><a href="#About">О НАС</a></li>
                         <li><a href="#Father">ОТЦЫ</a></li>
                         <li><a href="#Events">СОБЫТИЯ</a></li>
