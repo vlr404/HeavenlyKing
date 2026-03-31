@@ -1,9 +1,9 @@
 import './Ceremony.css';
-import { Divider } from '../../shared/Divider/Divider';
-import { Quote } from '../../shared/Quote/Quote';
-import { QuoteBlock } from '../../shared/QuoteBlock/QuoteBlock';
-import { MediaBlock } from '../../shared/MediaBlock/MediaBlock';
-import { Space } from '../../shared/Space/Space.jsx';
+import { Divider } from '../../../components/Home/Divider/Divider.js';
+import { Quote } from '../../../components/Home/Quote/Quote.js';
+import { QuoteBlock } from '../../../components/Home/QuoteBlock/QuoteBlock.js';
+import { MediaBlock } from '../../../components/Home/MediaBlock/MediaBlock.js';
+import { Space } from '../../../components/common/Space/Space.js';
 
 export const Ceremony = () => {
     return (

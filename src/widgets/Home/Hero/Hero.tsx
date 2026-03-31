@@ -1,8 +1,8 @@
-import './Home.css';
-import { eventsBase } from '../../shared/CountdownTimer/holidays';
-import { CountdownTimer } from '../../shared/CountdownTimer/CountdownTimer';
-import { Space } from '../../shared/Space/Space';
-import type { EventItem } from '../../shared/CountdownTimer/holidays';
+import './Hero.css';
+import { eventsBase } from '../../../components/Home/CountdownTimer/holidays';
+import { CountdownTimer } from '../../../components/Home/CountdownTimer/CountdownTimer';
+import { Space } from '../../../components/common/Space/Space';
+import type { EventItem } from '../../../components/Home/CountdownTimer/holidays';
 
 // Возвращает ближайшее будущее событие ИЛИ событие которое идёт сегодня
 const getNextEvent = (events: EventItem[]): EventItem | null => {
@@ -41,21 +41,17 @@ const getNextEvent = (events: EventItem[]): EventItem | null => {
     return todayEvent ?? nextEvent;
 };
 
-export const Home = () => {
+export const Hero = () => {
     const activeEvent = getNextEvent(eventsBase);
 
     return (
-<<<<<<< Updated upstream:src/widgets/Home/Home.tsx
-        <section id="Home" className="home section-npt">
-=======
         <section id="hero" className="hero section-npt">
->>>>>>> Stashed changes:src/widgets/Home/Hero/Hero.tsx
             <div className="section-container">
-                <div className="home__preview">
-                    <div className="home__preview-title">
+                <div className="hero__preview">
+                    <div className="hero__preview-title">
                         <h1>ЦАРСТВИЕ НЕБЕСНОЕ</h1>
                     </div>
-                    <div className="home__preview-subtitle">
+                    <div className="hero__preview-subtitle">
                         <h3>Здесь начинается путь к духовному обновлению</h3>
                     </div>
                     <Space mt={30} />

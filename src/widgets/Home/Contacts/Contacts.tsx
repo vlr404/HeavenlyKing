@@ -1,9 +1,9 @@
 import './Contacts.css';
-import { Map } from '../../shared/Map/Map.jsx';
-import { Divider } from '../../shared/Divider/Divider.jsx';
-import { Quote } from '../../shared/Quote/Quote.jsx';
-import { QuoteBlock } from '../../shared/QuoteBlock/QuoteBlock.jsx';
-import { Space}  from '../../shared/Space/Space.jsx'; 
+import { Map } from '../../../components/Home/Map/Map.js';
+import { Divider } from '../../../components/Home/Divider/Divider.js';
+import { Quote } from '../../../components/Home/Quote/Quote.js';
+import { QuoteBlock } from '../../../components/Home/QuoteBlock/QuoteBlock.js';
+import { Space}  from '../../../components/common/Space/Space.js'; 
 export const Contacts = () => {
     return (
         <section id = "contacts" className="contacts">
