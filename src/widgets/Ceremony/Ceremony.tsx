@@ -7,7 +7,7 @@ import { Space } from '../../shared/Space/Space.jsx';
 
 export const Ceremony = () => {
     return (
-        <section id = "Ceremony" className="Ceremony">
+        <section id = "ceremony" className="Ceremony">
              <Divider title="Церемонии" />   
              <Quote text="Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, 
                         дабы всякий верующий в Него, не погиб, но имел жизнь вечную. 

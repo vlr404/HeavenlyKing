@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import './App.css'
 
 import { Header } from './widgets/Header/Header.jsx';
@@ -11,6 +12,26 @@ import { Contacts } from './widgets/Contacts/Contacts.jsx';
 
 function App() {
     return (
+=======
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
+import Home from './pages/Home'
+import Shop from './pages/Shop'
+import { Header } from './components/common/Header/Header'
+
+function App() {
+  return (
+    <Router basename="/HeavenlyKing">
+      <div className="App">
+        <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+      </div>
+    </Router>
+  )
+}
+>>>>>>> Stashed changes
 
         <div className="App">
             <Header />

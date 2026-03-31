@@ -45,7 +45,11 @@ export const Home = () => {
     const activeEvent = getNextEvent(eventsBase);
 
     return (
+<<<<<<< Updated upstream:src/widgets/Home/Home.tsx
         <section id="Home" className="home section-npt">
+=======
+        <section id="hero" className="hero section-npt">
+>>>>>>> Stashed changes:src/widgets/Home/Hero/Hero.tsx
             <div className="section-container">
                 <div className="home__preview">
                     <div className="home__preview-title">

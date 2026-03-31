@@ -6,7 +6,7 @@ import { QuoteBlock } from '../../shared/QuoteBlock/QuoteBlock.jsx';
 import { Space}  from '../../shared/Space/Space.jsx'; 
 export const Contacts = () => {
     return (
-        <section id = "Contacts" className="contacts">
+        <section id = "contacts" className="contacts">
             <Divider title="Контакты" />
             <div className="section-cotainer">
             <Quote text="Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, 
