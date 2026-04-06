@@ -11,11 +11,11 @@ interface Product {
   isNew: boolean
 }
 
-interface CartItem extends Product {
+export interface CartItem extends Product {
   qty: number
 }
 
-interface CartStore {
+export interface CartStore {
   items: CartItem[]
   addItem: (product: Product) => void
   removeItem: (id: number) => void
