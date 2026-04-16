@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ProductCard.css";
+import { useCartStore } from "../../entity/cart/cartStore";
 
 interface Product {
   id: number;
@@ -17,10 +18,13 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { name, price, cat, img, isNew } = product;
 
+  const { addItem } = useCartStore();
+
   const [liked, setLiked] = useState(false);
   const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
+    addItem(product);
     setAdded(true);
     setTimeout(() => setAdded(false), 1800);
   };
